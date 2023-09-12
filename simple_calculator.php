@@ -36,6 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+/*
 function validNumber($num)
 {
     $pattern = '/^-?\d+(\.\d+)?$/';
@@ -46,6 +47,8 @@ function validNumber($num)
         return false;
     }
 }
+*/
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
