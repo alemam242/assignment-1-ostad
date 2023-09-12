@@ -8,14 +8,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     switch ($convert) {
         case "fahrenheitToCelsius":
-            $result = "$temp °F = ";
-            $result .= ($temp - 32) * 5 / 9;
-            $result .= " °C";
+            $result = ($temp - 32) * 5 / 9;
+            $result = sprintf("$temp °F = %.2f  °C", $result);
             break;
         case "celsiusToFahrenheit":
-            $result = "$temp °C = ";
             $result .= ($temp * 9 / 5) + 32;
-            $result .= " °F";
+            $result = sprintf("$temp °C = %.2f  °F", $result);
             break;
         default:
             $result = 0;
