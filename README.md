@@ -6,26 +6,26 @@ Personal Information.</br>
 ABout MySelf. Reload the page if any errors occur.
 
 # Task-2
-Temperature Converter.
+Temperature Converter.</br>
 Convert the temperature (Celsius to Fahrenheit or vice versa). And display the converted temperature.
 
 # Task-3
-Grade Calculator.
-Calculate the average points and grade based on the average point. Calculations have been made according to the grading system of Bangladesh.
+Grade Calculator.</br>
+Calculate the average points and grade based on the average point. Calculations have been made according to the grading system of Bangladesh.</br>
 ** Points must be between 0 and 100
 
 # Task-4
-Even or Odd Checker.
+Even or Odd Checker.</br>
 Not only check even or odd but also check positive or negative
 
 # Task-5
-Weather Report.
+Weather Report.</br>
 Based on the input temperature, it will show a report like (freezing, cold, warm, or too hot).
 
 # Task-6
-Comparison Tool.
+Comparison Tool.</br>
 Compare two numbers and check which is larger or equal using the ternary operator.
 
 # Task-7
-Simple Calculator.
+Simple Calculator.</br>
 Take two numbers. And performs basic arithmetic operations like (addition, subtraction, multiplication, and division).
