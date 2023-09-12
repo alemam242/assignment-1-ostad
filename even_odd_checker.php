@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <form method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
                                 <div class="form-group">
                                     <label for="number">Enter a Number:</label>
-                                    <input type="number" class="form-control" id="number" name="number" required>
+                                    <input type="number" class="form-control" id="number" name="number" placeholder="Enter an integer number" required>
                                 </div>
                                 <button type="submit" class="btn btn-primary" name="submit">Check</button>
                             </form>

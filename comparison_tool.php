@@ -46,11 +46,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <form method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
                                 <div class="form-group">
                                     <label for="number1">Number 1:</label>
-                                    <input type="number" class="form-control" id="number1" name="number1" required>
+                                    <input type="number" class="form-control" id="number1" name="number1" step="any" placeholder="Enter number1" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="number2">Number 2:</label>
-                                    <input type="number" class="form-control" id="number2" name="number2" required>
+                                    <input type="number" class="form-control" id="number2" name="number2" step="any" placeholder="Enter number2" required>
                                 </div>
                                 <button type="submit" class="btn btn-primary" name="submit">Compare</button>
                             </form>

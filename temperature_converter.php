@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <form method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
                                 <div class="form-group">
                                     <label for="temperature">Temperature:</label>
-                                    <input type="number" class="form-control" id="temperature" name="temperature" required>
+                                    <input type="number" class="form-control" id="temperature" name="temperature" step="any" placeholder="Enter temperature" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="conversionDirection">Conversion Direction:</label>

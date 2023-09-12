@@ -35,6 +35,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $show = true;
     }
 }
+
+function validNumber($num)
+{
+    $pattern = '/^-?\d+(\.\d+)?$/';
+
+    if (preg_match($pattern, $num)) {
+        return true;
+    } else {
+        return false;
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -71,12 +82,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <form method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
                                 <div class="form-group">
                                     <label for="num1">Number 1:</label>
-                                    <input type="number" class="form-control" id="num1" name="num1" required>
+                                    <input type="number" class="form-control" id="num1" name="num1" step="any" placeholder="Enter number1" required>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="num2">Number 2: <label for="num2" class="error"> <?= $error ?> </label> </label>
-                                    <input type="number" class="form-control" id="num2" name="num2" required>
+                                    <input type="number" class="form-control" id="num2" name="num2" step="any" placeholder="Enter number2" required>
                                 </div>
 
                                 <div class="form-group">

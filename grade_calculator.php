@@ -79,15 +79,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <form method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
                                 <div class="form-group">
                                     <label for="test1">Test 1 Score: <label for="test1" class="error"> <?= $error1 ?> </label> </label>
-                                    <input type="number" class="form-control" id="test1" name="test1" required>
+                                    <input type="number" class="form-control" id="test1" name="test1" step="any" placeholder="Enter test 1 score" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="test2">Test 2 Score: <label for="test2" class="error"> <?= $error2 ?> </label> </label>
-                                    <input type="number" class="form-control" id="test2" name="test2" required>
+                                    <input type="number" class="form-control" id="test2" name="test2" step="any" placeholder="Enter test 2 score" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="test3">Test 3 Score: <label for="test3" class="error"> <?= $error3 ?> </label> </label>
-                                    <input type="number" class="form-control" id="test3" name="test3" required>
+                                    <input type="number" class="form-control" id="test3" name="test3" step="any" placeholder="Enter test 3 score" required>
                                 </div>
                                 <button type="submit" class="btn btn-primary" name="submit">Calculate</button>
                             </form>
