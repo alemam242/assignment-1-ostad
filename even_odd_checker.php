@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $number = $_POST["number"];
 
     if ($number == 0) {
-        $result = "$number is zero. But considered as asn even number.";
+        $result = "$number is zero. But considered as an even number.";
     } else if ($number % 2 == 0) {
         $result = "$number is an even number.";
     } else {
