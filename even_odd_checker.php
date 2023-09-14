@@ -5,14 +5,12 @@ $result = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $number = $_POST["number"];
 
-    if ($number >= 0 && $number % 2 == 0) {
-        $result = "$number is a positive even number";
-    } else if ($number < 0 && $number % 2 == 0) {
-        $result = "$number is a negative even number";
-    } else if ($number >= 0 && $number % 2 == 1) {
-        $result = "$number is a positive odd number";
-    } else if ($number < 0 && $number % 2 == 1) {
-        $result = "$number is a negative odd number";
+    if ($number == 0) {
+        $result = "$result is zero. But considered as asn even number.";
+    } else if ($number % 2 == 0) {
+        $result = "$result is an even number.";
+    } else {
+        $result = "$result is an odd number.";
     }
 
     $show = true;
